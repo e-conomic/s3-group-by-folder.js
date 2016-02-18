@@ -9,6 +9,7 @@
     "coveralls": "istanbul cover --dir ./.coverage _mocha --include-all-sources --report lcovonly -- -R spec && cat ./.coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./.coverage"
   },
   "dependencies": {
+    "aws-sdk": "^2.0.15",
     "aws-sdk-promise": "gaggle/aws-sdk-promise",
     "lodash": "^4.2.1",
     "q": "^1.4.1"
