@@ -1,0 +1,24 @@
+{
+  "name": "s3-group-by-folder.js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jon Lauridsen",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "istanbul cover --dir ./.coverage _mocha --include-all-sources -- -R spec",
+    "coveralls": "istanbul cover --dir ./.coverage _mocha --include-all-sources --report lcovonly -- -R spec && cat ./.coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./.coverage"
+  },
+  "dependencies": {
+    "aws-sdk-promise": "gaggle/aws-sdk-promise",
+    "lodash": "^4.2.1",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "mocha-lcov-reporter": "^1.1.0",
+    "must": "^0.13.1",
+    "sinon": "^1.17.3"
+  }
+}
